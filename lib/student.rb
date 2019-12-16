@@ -42,7 +42,7 @@ class Student
       self.new_from_db(row)
     end
   end
-
+  #why does an integer for grade # work when grade is TEXT?
   def self.students_below_12th_grade
     sql = <<-SQL
       SELECT *
